@@ -42,13 +42,15 @@ public class Main {
 					avt.buy(n_tray, n_price, n_date, n_time);
 					break;
 				case 3:
-					avt.write_history();
+					avt.s.stat();
 					break;
 				case 4:
-					avt.write_stat_price();
+					Stat_price st_pr = new Stat_price (avt.s);
+					st_pr.stat();
 					break;
 				case 5:
-					avt.statValid();
+					Stat_valid st_v= new Stat_valid (avt);
+					st_v.stat();
 					break;
 				case 6: 
 					sc.close();

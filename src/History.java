@@ -1,10 +1,10 @@
 import java.util.Date;
 
-public class History {
+public class History  {
 	Date data_buy;
 	String name_pr;
 	int price;
-	
+		
 	History(Date d, String n, int p){
 		data_buy = d;
 		name_pr = n;
